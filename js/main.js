@@ -49,20 +49,11 @@ sr.reveal('.about_text', { delay: 400 });
 
 sr.reveal('.skills_subtitle', {});
 sr.reveal('.skills_text', { delay: 200 });
-sr.reveal('.skills_data', { interval: 200 });
+sr.reveal('.skills_data', { interval: 100 });
 
-sr.reveal('.skills_subtitle', {});
 sr.reveal('.education_content', { delay: 200 });
-// sr.reveal('.education_text', { delay: 400 });
-
-sr.reveal('.work_subtitle', {});
-sr.reveal('.work_content', { delay: 200 });
-// sr.reveal('.work_text', { delay: 400 });
-// sr.reveal('.work_data', { delay: 600 });
-
-sr.reveal('.project_title', {});
+sr.reveal('.experience_content', { delay: 200 });
 sr.reveal('.project_content', { delay: 200 });
-
 
 sr.reveal('.footer_title', {});
 sr.reveal('.footer_social', { delay: 200 });

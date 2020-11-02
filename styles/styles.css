@@ -249,7 +249,8 @@ img {
 }
 
 .home_img_style {
-    border-radius: 2%;
+    border-radius: 50%;
+    background-color: var(--first-color);
 }
 
 .button {
@@ -281,6 +282,7 @@ img {
 }
 
 .about_img img {
+    border-radius: 5%;
     width: 200px;
 }
 
@@ -348,11 +350,13 @@ img {
 
 /* Education */
 .education_container,
+.experience_container,
 .project_container {
     row-gap: 2rem;
 }
 
 .education_content,
+.experience_content,
 .project_content {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
@@ -360,6 +364,8 @@ img {
 
 .education_year,
 .education_race,
+.experience_year,
+.experience_company,
 .project_title,
 .project_link {
     /* font-size: ; */
@@ -368,24 +374,28 @@ img {
 
 .education_university,
 .education_speciality,
+.experience_position,
 .project_detail {
     display: block;
     font-size: var(--smaller-font-size);
 }
 
 .education_year,
+.experience_year,
 .education_university,
 .project_title {
     text-align: right;
 }
 
 .education_time,
+.experience_time,
 .project_time {
     padding: 0 1rem;
     justify-self: center;
 }
 
 .education_rounder,
+.experience_rounder,
 .project_rounder {
     position: relative;
     display: inline-block;
@@ -396,6 +406,7 @@ img {
 }
 
 .education_rounder::before,
+.experience_rounder::before,
 .project_rounder::before {
     content: "";
     position: absolute;
@@ -407,6 +418,7 @@ img {
 }
 
 .education_line,
+.experience_line,
 .project_line {
     display: block;
     height: 90%;
