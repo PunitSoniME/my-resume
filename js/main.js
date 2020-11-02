@@ -60,5 +60,9 @@ sr.reveal('.work_content', { delay: 200 });
 // sr.reveal('.work_text', { delay: 400 });
 // sr.reveal('.work_data', { delay: 600 });
 
+sr.reveal('.project_title', {});
+sr.reveal('.project_content', { delay: 200 });
+
+
 sr.reveal('.footer_title', {});
 sr.reveal('.footer_social', { delay: 200 });
