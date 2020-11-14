@@ -244,7 +244,7 @@ img {
 .home_img {
     position: absolute;
     right: 5px;
-    bottom: 30px;
+    bottom: 0px;
     width: 295px;
 }
 
