@@ -516,10 +516,14 @@ img {
         bottom: 15%;
     }
 
-    .about_container,
-    .skills_container {
+    .about_container {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
+        text-align: initial;
+    }
+
+    .skills_container {
+        grid-template-columns: repeat(2, 1fr);
         text-align: initial;
     }
 
