@@ -8,554 +8,547 @@
 
     <title>Punit Soni</title>
 
-
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
 
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div class="navbar">
-                <a href="#" class="nav_logo">Punit</a>
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">
+                Punit
+            </a>
 
-                <div class="input-color-container">
-                    <input id="input-color" value="#4070f4" class="input-color" type="color"
-                        oninput="colorChange(this)">
-                </div>
-            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="bx bx-home nav__icon"></i>Home
+                        </a>
+                    </li>
 
-            <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list">
-                    <li class="nav_item">
-                        <a href="#home" class="nav_link active">Home</a>
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class="bx bx-user nav__icon"></i>Profile
+                        </a>
                     </li>
-                    <li class="nav_item">
-                        <a href="#about" class="nav_link">About</a>
+
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class="bx bx-book nav__icon"></i>Education
+                        </a>
                     </li>
-                    <li class="nav_item">
-                        <a href="#skills" class="nav_link">Skills</a>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="bx bx-receipt nav__icon"></i>Skills
+                        </a>
                     </li>
-                    <li class="nav_item">
-                        <a href="#education" class="nav_link">Education</a>
+
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class="bx bx-briefcase-alt nav__icon"></i>Experience
+                        </a>
                     </li>
-                    <li class="nav_item">
-                        <a href="#experience" class="nav_link">Experience</a>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="bx bx-award nav__icon"></i>Projects
+                        </a>
                     </li>
-                    <li class="nav_item">
-                        <a href="#projects" class="nav_link">Projects</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#contact" class="nav_link">Contact</a>
+
+                    <li class="nav__item">
+                        <a href="#languages" class="nav__link">
+                            <i class='bx bx-font nav__icon'></i></i>Languages
+                        </a>
                     </li>
                 </ul>
             </div>
 
-            <div class="nav_toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
+            <div class="nav__toggle" id='nav-toggle'>
+                <i class="bx bx-grid-alt"></i>
             </div>
         </nav>
     </header>
 
+    <main class="l-main bd-container">
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
 
-    <main class="l-main">
+                <!-- Home -->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="images/Profile_Picture.jpg" alt="Punit" class="home__img" />
+                            <h1 class="home__title">PUNIT <b>SONI</b></h1>
+                            <h3 class="home__profession">Software Engineer</h3>
 
-        <section class="home bd-grid" id="home">
-            <div class="home_data">
-                <h1 class="home_title">
-                    Hi, <br />
-                    I am
-                    <span class="home_title-color">Punit</span>
-                    <br />
-                    Software Engineer
-                </h1>
-                <a href="./files/Punit Soni - Resume.pdf" class="button" download>Download Resume</a>
-            </div>
+                            <div>
+                                <a download href="files/punit-resume.pdf" class="home__button-movil">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
 
-            <div class="home_social">
-                <a href="https://www.linkedin.com/in/punitsonime/" class="home_social-icon" title="Linkedin"
-                    target="_blank">
-                    <i class='bx bxl-linkedin'></i>
-                </a>
-                <a href="https://github.com/PunitSoniME/" class="home_social-icon" title="Github" target="_blank">
-                    <i class='bx bxl-github'></i>
-                </a>
-                <a href="https://facebook.com/PunitSoniME" class="home_social-icon" title="Facebook" target="_blank">
-                    <i class='bx bxl-facebook'></i>
-                </a>
-            </div>
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class="bx bx-map home__icon"></i> Patan, Gujarat, India
+                            </span>
 
-            <div class="home_img">
-                <img src="./images/Profile_Picture_Home.png" alt="Punit Soni" class="home_img_style" />
-            </div>
-        </section>
+                            <span class="home__information">
+                                <i class="bx bx-phone home__icon"></i> +91 9725620501
+                            </span>
 
+                            <a class="home__information" href="mailto:punit.soni33@gmail.com">
+                                <i class="bx bx-envelope home__icon"></i>
+                                <p class="link-color">punit.soni33@gmail.com</p>
+                            </a>
 
-        <section class="about section" id="about">
-            <h2 class="section-title">About</h2>
+                            <a class="home__information" href="https://punit-soni.web.app" target="_blank">
+                                <i class="bx bx-world home__icon"></i>
+                                <p class="link-color">https://punit-soni.web.app</p>
+                            </a>
 
-            <div class="about_container bd-grid">
-                <div class="about_img">
-                    <img src="./images/Profile_Picture_About.jpg" alt="Punit Soni" />
-                </div>
+                        </div>
 
-                <div>
-                    <h2 class="about_subtitle">I am Punit Soni</h2>
-                    <ul class="about_text ul-style">
-                        <li>
-                            Started working as a Developer in Web Application Development using Object Oriented
-                            Technologies including analysis, design, coding, development, unit testing since 2015.
-                        </li>
-                        <br />
-                        <li>
-                            Highly analytical, organized and flexible, able to multitask and meet deadlines.
-                            Capable of self-learning to explore technical competency over a broad range of technologies.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+                    </div>
 
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
+                    <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
 
-            <div class="skills_details bd-grid">
-                <div>
-                    <h2 class="skills_subtitle">Professional Skills</h2>
-                    <p class="skills_text">
-                        Responsible for web application development.
-                        <br />
-                        Involved in developing, Unit Testing, UI Designing and Fixing Bugs.
-                        <br />
-                        Involved in understanding existing application and migration in new system.
-                        <br />
-                        Participation in knowledge transfer for the module with team.
+                    <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+                </section>
+
+                <!-- Social -->
+                <section class="social section">
+                    <h2 class="section-title">SOCIAL</h2>
+
+                    <div class="social__container bd-grid">
+                        <a href="https://www.linkedin.com/in/punitsonime" class="social__link">
+                            <i class="bx bxl-linkedin-square social__icon"></i> Linkedin - @PunitSoniME
+                        </a>
+
+                        <a href="https://github.com/PunitSoniME/" target="_blank" class="social__link">
+                            <i class="bx bx bxl-github social__icon"></i> Github - @PunitSoniME
+                        </a>
+
+                        <a href="https://www.facebook.com/PunitSoniME" target="_blank" class="social__link">
+                            <i class="bx bxl-facebook social__icon"></i> Facebook - @PunitSoniME
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Profile -->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">PROFILE</h2>
+
+                    <p class="profile__description">
+                        Started working as a Developer in Web Application Development using Object Oriented Technologies
+                        including analysis, design, coding, development, unit testing since 2015.
+                        <br /><br />
+                        Highly analytical, organized and flexible, able to multitask and meet deadlines. Capable of
+                        self-learning to explore technical competency over a broad range of technologies.
                     </p>
-                </div>
-            </div>
+                </section>
 
-            <div class="skills_container bd-grid">
+                <!-- Education -->
+                <section class="education section" id="education">
+                    <h2 class="section-title">EDUCATION</h2>
 
-                <div>
-                    <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bxl-html5 skills_icon'></i>
-                            <span class="skills_name">HTML5</span>
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title" title="MASTER OF COMPUTER APPLICATIONS">M.C.A.</h3>
+                                <span class="education__studies" title="GUJARAT TECHNOLOGICAL UNIVERSITY">G.T.U.</span>
+                                <span class="education__year">2012 - 2015</span>
+                            </div>
+                        </div>
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <!-- <span class="education__line"></span> -->
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title" title="BACHELORS OF COMPUTER APPLICATIONS">B.C.A</h3>
+                                <span class="education__studies"
+                                    title="HEMCHANDRACHARYA NORTH GUJARAT UNIVERSITY">H.N.G.U.</span>
+                                <span class="education__year">2009 - 2012</span>
+                            </div>
                         </div>
                     </div>
+                </section>
 
-                    <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bxl-css3 skills_icon'></i>
-                            <span class="skills_name">CSS3</span>
-                        </div>
+                <!-- Skills -->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> HTML5
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> CSS3
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Bootstrap
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Javascript
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Typescript
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> jQuery
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> AngularJs
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Angular
+                            </li>
+                        </ul>
+
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Ionic
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> ReactJs
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Bootstrap
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> C# .Net
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Node.js
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> SQL
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> MongoDB
+                            </li>
+
+                        </ul>
                     </div>
-
-                    <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bxl-javascript skills_icon'></i>
-                            <span class="skills_name">Javascript</span>
-                        </div>
-                    </div>
-
-                    <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bxl-javascript skills_icon'></i>
-                            <span class="skills_name">jQuery</span>
-                        </div>
-                    </div>
-
-                    <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bxl-bootstrap skills_icon'></i>
-                            <span class="skills_name">Bootstrap</span>
-                        </div>
-                    </div>
-
-                    <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bxl-angular skills_icon'></i>
-                            <span class="skills_name">AngularJs, Angular</span>
-                        </div>
-                    </div>
-
-                    <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bx-mobile-alt skills_icon'></i>
-                            <span class="skills_name">Ionic</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div>
-                    
-                    <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bxl-react skills_icon'></i>
-                            <span class="skills_name">ReactJs</span>
-                        </div>
-                    </div>
-
-                    <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bx-code-block skills_icon'></i>
-                            <span class="skills_name">C# .Net</span>
-                        </div>
-                    </div>
-
-                    <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bxl-nodejs skills_icon'></i>
-                            <span class="skills_name">Node Js</span>
-                        </div>
-                    </div>
-
-                    <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bx-data skills_icon'></i>
-                            <span class="skills_name">SQL</span>
-                        </div>
-                    </div>
-
-                    <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bx-data skills_icon'></i>
-                            <span class="skills_name">MongoDB</span>
-                        </div>
-                    </div>
-
-                    <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bx-code-block skills_icon'></i>
-                            <span class="skills_name">Typescript</span>
-                        </div>
-                    </div>
-
-                    <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bx-code-block skills_icon'></i>
-                            <span class="skills_name">Kendo Ui</span>
-                        </div>
-                    </div>
-
-                </div>
+                </section>
 
             </div>
 
-        </section>
+            <div class=" resume__right">
 
-        <section class="education section" id="education">
-            <h2 class="section-title">Education</h2>
+                <!-- Experience -->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Experience</h2>
 
-            <div class="education_container bd-grid">
-                <div class="education_content">
-                    <div>
-                        <h3 class="education_year">2008 - 2009</h3>
-                        <span class="education_university">G.S.H.S.E.B</span>
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">SOFTWARE ENGINEER</h3>
+                                <span class="experience__company">From Jun-2020 to till date | <b>Thomson
+                                        Reuters</b></span>
+
+                                <div class="experience__project">
+                                    <b class="experience__project__title">Project #1 - Capital Confirmation</b>
+                                    <p class="experience__description">
+                                        &bull; Currently working on an on-going product called Capital Confirmation.
+                                    </p>
+                                    <p class="experience__description">
+                                        &bull; Primary role is implement new functionalities and solve existing
+                                        production
+                                        issues.
+                                    </p>
+                                    <p class="experience__description">
+                                        &bull; Converted old C# code into executable job which can execute on specific
+                                        time
+                                        every day.
+                                    </p>
+                                    <p class="experience__description">
+                                        &bull; Created an excel formula file to generate sql script for all the records
+                                        to
+                                        save development hours and efforts.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">SR. SOFTWARE ENGINEER</h3>
+                                <span class="experience__company">From Jun-2015 to Mar-2020 | <b>Brain TecLabs Pvt.
+                                        Ltd.</b></span>
+
+                                <div class="experience__project">
+                                    <b class="experience__project__title">Project #1 - Brain Payroll</b>
+                                    <p class="experience__description">
+                                        &bull; Worked on a product called Brain Payroll ( U.K. Payroll )
+                                    </p>
+                                    <p class="experience__description">
+                                        &bull; Implemented Company, Employee import functionality to import thousands of
+                                        records from excel sheet.
+                                    </p>
+                                    <p class="experience__description">
+                                        &bull; Implemented frontend code such a way that validate thousands of records
+                                        with common validations on frontend and reduced validation time from 9 minutes
+                                        to 45 seconds.
+                                    </p>
+                                    <p class="experience__description">
+                                        &bull; Implemented Leave management module in Brain Payroll Admin, Employee and
+                                        Company Portal
+                                    </p>
+                                    <p class="experience__description">
+                                        &bull; One of the developer of Brain Payroll app which was created in Ionic.
+                                    </p>
+                                </div>
+
+                                <div class="experience__project">
+                                    <b class="experience__project__title">Project #2 - Custom Import Export
+                                        Component</b>
+                                    <p class="experience__description">
+                                        &bull; Component which accept excel/csv as an input and map with table's fields
+                                        with it and import sheet's data to table
+                                    </p>
+                                    <p class="experience__description">
+                                        &bull; This helped a lot of developers with in the organization and saved a lot
+                                        of time when they needed to import data from excel/csv sheet
+                                    </p>
+                                    <p class="experience__description">
+                                        &bull; Frontend was built in angular.js, bootstrap and backend in .Net C#, sql
+                                    </p>
+                                </div>
+
+                                <div class="experience__project">
+                                    <b class="experience__project__title">Project #3 - Human Resource Management
+                                        System</b>
+                                    <p class="experience__description">
+                                        &bull; Implemented HRMS system for internal use ( Only developer )
+                                    </p>
+                                    <p class="experience__description">
+                                        &bull; Read data from biometric device ( thumb scanner ) and processing the data
+                                        to get in-out time of employees.
+                                    </p>
+                                    <p class="experience__description">
+                                        &bull; Implemented E.S.S. ( Employee Self Service ) module in which employee can
+                                        ask for full day or half day leave and that request goes to high level employee
+                                        for apporaval. Email also sent to personal email id of the both parties (
+                                        Requester and Approver )
+                                    </p>
+                                    <p class="experience__description">
+                                        &bull; This HRMS system was built in .Net MVC, SQL, Bootstrap.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <!-- Projects -->
+                <section class="project section" id="projects">
+                    <h2 class="section-title">Projects</h2>
+
+                    <div class="project__container bd-grid">
+                        <div class="project__content">
+                            <h3 class="project__title">
+                                <a href="https://play.google.com/store/apps/details?id=com.ionicframework.tino163709"
+                                    class="link-color" target="_blank">
+                                    TINO IQ - Ionic Application ↗
+                                </a>
+                            </h3>
+                            <p class="project__description">
+                                I got this project from upwork
+                            </p>
+                            <p class="project__description">
+                                Converted whole app from Ionic 2 to Ionic 5.
+                            </p>
+                            <p class="project__description">
+                                Integrated facebook and google authentication.
+                            </p>
+                            <p class="project__description">
+                                Uploaded this app on Playstore and have 1k+ downloads.
+                            </p>
+                        </div>
+
+                        <div class="project__content">
+                            <h3 class="project__title">
+                                <a href="https://my-corona-tracker.web.app/" class="link-color" target="_blank">
+                                    Corona Tracker - Ionic PWA ↗
+                                </a>
+                            </h3>
+                            <p class="project__description">
+                                Made this app to get current corona statistics all around the world.
+                            </p>
+                            <p class="project__description">
+                                Created backend in nodejs and called external api to get those statistics.
+                            </p>
+                            <p class="project__description">
+                                Integrated twitter api to get tweets of famous Covid hashtags.
+                            </p>
+                        </div>
+
+                        <div class="project__content">
+                            <h3 class="project__title">
+                                <a href="https://my-qr-barcode-scanner.web.app/" class="link-color" target="_blank">
+                                    QR - Barcode Scanner - Ionic PWA ↗
+                                </a>
+                            </h3>
+                            <p class="project__description">
+                                An application to scan QR / Barcode. You don't need to install any external application
+                                if you use this PWA.
+                            </p>
+                        </div>
+
+                        <div class="project__content">
+                            <h3 class="project__title">
+                                <a href="https://my-image-compressor.web.app/" class="link-color" target="_blank">
+                                    Image Compressor - React App ↗
+                                </a>
+                            </h3>
+                            <p class="project__description">
+                                An application to reduce your image size and you can save the space of your
+                                hard disk/mobile
+                            </p>
+                            <p class="project__description">
+                                You can use those compressed images to reduce app load time or any other way you want
+                            </p>
+                        </div>
+
+                        <div class="project__content">
+                            <h3 class="project__title">
+                                <a href="https://github.com/PunitSoniME/react-chat-app" class="link-color"
+                                    target="_blank">
+                                    Chat App - React App ↗
+                                </a>
+                            </h3>
+                            <p class="project__description">
+                                An application to do a group chat with new joiners and leavers message.
+                            </p>
+                            <p class="project__description">
+                                Backend is written in Node.js which you will find out in the readme description of
+                                repository
+                            </p>
+                        </div>
+
+                        <div class="project__content">
+                            <h3 class="project__title">
+                                <a href="https://punitsonime.github.io/tasks-by-planner/" class="link-color"
+                                    target="_blank">
+                                    Tasks By Planner - React Material App ↗
+                                </a>
+                            </h3>
+                            <p class="project__description">
+                                If you are familiar with tasks by planner which is provided by Microsoft Teams, then you
+                                might have a good idea about this app.
+                            </p>
+                            <p class="project__description">
+                                Live app demo is already provided in repository's readme description.
+                            </p>
+                            <a href="https://github.com/PunitSoniME/tasks-by-planner" class="link-color"
+                                target="_blank">Repository Link
+                                ↗</a>
+                        </div>
+
+                        <div class="project__content">
+                            <h3 class="project__title">
+                                <a href="https://www.npmjs.com/package/ng-password-validation" class="link-color"
+                                    target="_blank">
+                                    ng-password-validation - Angular.js Package ↗
+                                </a>
+                            </h3>
+                            <p class="project__description">
+                                Angular.js package which helps you to integrate password and retype password in
+                                registration form.
+                            </p>
+                        </div>
+
+                        <div class="project__content">
+                            <h3 class="project__title">
+                                <a href="https://www.npmjs.com/package/ng-alphabetic-filter" class="link-color"
+                                    target="_blank">
+                                    ng-alphabetic-filter - Angular.js Package ↗
+                                </a>
+                            </h3>
+                            <p class="project__description">
+                                Angular.js package which helps you to filter data based on first letter of your record
+                            </p>
+                            <p class="project__description">
+                                This directive will generate A-Z buttons based on your property value and filter records
+                                when you click on any of those A-Z buttons.
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- References -->
+                <!-- <section class="references section" id="references">
+                    <h2 class="section-title">References</h2>
+
+                    <div class="references__container bd-grid">
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">C.E.O.</span>
+                            <h3 class="references__title">Mr. Prashant Gupta</h3>
+                            <ul class="references__contact">
+                                <li>Email: contact@tinoiq.com</li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="education_time">
-                        <span class="education_rounder"></span>
-                        <span class="education_line"></span>
+                </section> -->
+
+                <!-- Languages -->
+                <section class="languages section" id="languages">
+                    <h2 class="section-title">Languages</h2>
+
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> English
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> Hindi
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> Gujarati
+                            </li>
+                        </ul>
                     </div>
 
-                    <div>
-                        <h3 class="education_race">12th</h3>
-                        <span class="education_speciality">Science</span>
-                    </div>
-                </div>
+                </section>
 
-                <div class="education_content">
-                    <div>
-                        <h3 class="education_year">2009 - 2012</h3>
-                        <span class="education_university">H.N.G.U</span>
-                    </div>
-
-                    <div class="education_time">
-                        <span class="education_rounder"></span>
-                        <span class="education_line"></span>
-                    </div>
-
-                    <div>
-                        <h3 class="education_race">B.C.A</h3>
-                        <span class="education_speciality">Information Technology</span>
-                    </div>
-                </div>
-
-                <div class="education_content">
-                    <div>
-                        <h3 class="education_year">2012 - 2015</h3>
-                        <span class="education_university">G.T.U</span>
-                    </div>
-
-                    <div class="education_time">
-                        <span class="education_rounder"></span>
-                        <span class="education_line"></span>
-                    </div>
-
-                    <div>
-                        <h3 class="education_race">M.C.A</h3>
-                        <span class="education_speciality">Information Technology</span>
-                    </div>
-                </div>
             </div>
-        </section>
-
-
-        <section class="experience section" id="experience">
-            <h2 class="section-title">Experience</h2>
-
-            <div class="experience_container bd-grid">
-                <div class="experience_content">
-                    <div>
-                        <h3 class="experience_year">2015 - 2020</h3>
-                        <!-- <span class="experience_university">G.S.H.S.E.B</span> -->
-                    </div>
-
-                    <div class="experience_time">
-                        <span class="experience_rounder"></span>
-                        <span class="experience_line"></span>
-                    </div>
-
-                    <div>
-                        <h3 class="experience_company">Brain TecLabs Pvt Ltd</h3>
-                        <span class="experience_position">Sr. Software Engineer</span>
-                    </div>
-                </div>
-
-                <div class="experience_content">
-                    <div>
-                        <h3 class="experience_year">2020 - Cont.</h3>
-                        <!-- <span class="experience_university"></span> -->
-                    </div>
-
-                    <div class="experience_time">
-                        <span class="experience_rounder"></span>
-                        <span class="experience_line"></span>
-                    </div>
-
-                    <div>
-                        <h3 class="experience_company">Thomson Reuters</h3>
-                        <span class="experience_position">Software Engineer</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="project section" id="projects">
-            <h2 class="section-title">Personal Projects</h2>
-
-            <div class="project_container bd-grid">
-
-                <div class="project_content">
-                    <div>
-                        <h3 class="project_title">React App</h3>
-                    </div>
-
-                    <div class="project_time">
-                        <span class="project_rounder"></span>
-                        <span class="project_line"></span>
-                    </div>
-
-                    <div>
-                        <h3 class="project_link">
-                            <a href="https://my-image-compressor.web.app/" target="_blank" class="link">Image Compressor
-                                &#8599;</a>
-                        </h3>
-                    </div>
-                </div>
-
-                <div class="project_content">
-                    <div>
-                        <h3 class="project_title">React App</h3>
-                    </div>
-
-                    <div class="project_time">
-                        <span class="project_rounder"></span>
-                        <span class="project_line"></span>
-                    </div>
-
-                    <div>
-                        <h3 class="project_link">
-                            <a href="https://github.com/PunitSoniME/react-chat-app" target="_blank" class="link">Chat
-                                Application
-                                &#8599;</a>
-                        </h3>
-                    </div>
-                </div>
-
-                <div class="project_content">
-                    <div>
-                        <h3 class="project_title">React App</h3>
-                    </div>
-
-                    <div class="project_time">
-                        <span class="project_rounder"></span>
-                        <span class="project_line"></span>
-                    </div>
-
-                    <div>
-                        <h3 class="project_link">
-                            <a href="https://punitsonime.github.io/react-todo-list/" target="_blank" class="link">Todo
-                                List
-                                &#8599;</a>
-                        </h3>
-                    </div>
-                </div>
-
-                <div class="project_content">
-                    <div>
-                        <h3 class="project_title">Ionic App (Angular)</h3>
-                    </div>
-
-                    <div class="project_time">
-                        <span class="project_rounder"></span>
-                        <span class="project_line"></span>
-                    </div>
-
-                    <div>
-                        <h3 class="project_link">
-                            <a href="https://play.google.com/store/apps/details?id=com.ionicframework.tino163709"
-                                target="_blank" class="link">Tino IQ
-                                &#8599;</a>
-                        </h3>
-                        <span class="project_detail">Got this project from Upwork</span>
-                    </div>
-                </div>
-
-                <div class="project_content">
-                    <div>
-                        <h3 class="project_title">Ionic PWA (Angular)</h3>
-                    </div>
-
-                    <div class="project_time">
-                        <span class="project_rounder"></span>
-                        <span class="project_line"></span>
-                    </div>
-
-                    <div>
-                        <h3 class="project_link">
-                            <a href="https://my-corona-tracker.web.app/" target="_blank" class="link">Corona Tracker
-                                &#8599;</a>
-                        </h3>
-                    </div>
-                </div>
-
-                <div class="project_content">
-                    <div>
-                        <h3 class="project_title">Ionic PWA (Angular)</h3>
-                    </div>
-
-                    <div class="project_time">
-                        <span class="project_rounder"></span>
-                        <span class="project_line"></span>
-                    </div>
-
-                    <div>
-                        <h3 class="project_link">
-                            <a href="https://my-qr-barcode-scanner.web.app/" target="_blank" class="link">Barcode / QR
-                                Scanner
-                                &#8599;</a>
-                        </h3>
-                    </div>
-                </div>
-
-                <div class="project_content">
-                    <div>
-                        <h3 class="project_title">Angular Js Package</h3>
-                    </div>
-
-                    <div class="project_time">
-                        <span class="project_rounder"></span>
-                        <span class="project_line"></span>
-                    </div>
-
-                    <div>
-                        <h3 class="project_link">
-                            <a href="https://www.npmjs.com/package/ng-password-validation" target="_blank"
-                                class="link">Ng Password Validation
-                                &#8599;</a>
-                        </h3>
-                    </div>
-                </div>
-
-                <div class="project_content">
-                    <div>
-                        <h3 class="project_title">Angular Js Package</h3>
-                    </div>
-
-                    <div class="project_time">
-                        <span class="project_rounder"></span>
-                        <span class="project_line"></span>
-                    </div>
-
-                    <div>
-                        <h3 class="project_link">
-                            <a href="https://www.npmjs.com/package/ng-alphabetic-filter" target="_blank" class="link">Ng
-                                Alphabetic Filter
-                                &#8599;</a>
-                        </h3>
-                    </div>
-                </div>
-
-                <div class="project_content">
-                    <div>
-                        <h3 class="project_title">Angular Package</h3>
-                    </div>
-
-                    <div class="project_time">
-                        <span class="project_rounder"></span>
-                        <span class="project_line"></span>
-                    </div>
-
-                    <div>
-                        <h3 class="project_link">
-                            <a href="https://www.npmjs.com/package/ngx-fullscreen-slider" target="_blank"
-                                class="link">Ngx Fullscreen Slider
-                                &#8599;</a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
 
     </main>
 
-    <footer class="footer" id="contact">
-        <p class="footer_title">Punit Soni</p>
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
 
-        <div class="footer_social">
-            <a href="https://www.linkedin.com/in/punitsonime/" class="footer_icon" title="Linkedin" target="_blank">
-                <i class="bx bxl-linkedin"></i>
-            </a>
-            <a href="https://facebook.com/PunitSoniME" class="footer_icon" title="Facebook" target="_blank">
-                <i class="bx bxl-facebook"></i>
-            </a>
-            <a href="https://twitter.com/PunitSoniME" class="footer_icon" title="Twitter" target="_blank">
-                <i class="bx bxl-twitter"></i>
-            </a>
-            <a href="mailto:punit.soni33@gmail.com" class="footer_icon" title="Email" target="_blank">
-                <i class='bx bx-envelope'></i>
-            </a>
-            <a href="https://github.com/PunitSoniME/" class="footer_icon" title="Github" target="_blank">
-                <i class='bx bxl-github'></i>
-            </a>
-            <a href="https://stackoverflow.com/users/4369080/punit" class="footer_icon" title="Stackoverflow"
-                target="_blank">
-                <i class='bx bxl-stack-overflow'></i>
-            </a>
-
-        </div>
-
-        <p>&#169; 2020 copyright all rights reserved</p>
-    </footer>
-
-
-    <script src=" https://unpkg.com/scrollreveal"></script>
+    <script src="./js/html2pdf.bundle.min.js"></script>
     <script src="./js/main.js"></script>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
