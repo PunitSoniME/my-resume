@@ -516,7 +516,8 @@ img {
 }
 
 /* References */
-.references__content {
+.references__content,
+.contributions__content {
     gap: 0.25rem;
 }
 
@@ -525,11 +526,14 @@ img {
 }
 
 .references__subtitle,
-.references__contact {
+.references__contact,
+.contributions__subtitle,
+.contributions__link {
     font-size: var(--smaller-font-size);
 }
 
-.references__title {
+.references__title,
+.contributions__at {
     font-size: var(--h3-font-size);
 }
 
@@ -618,7 +622,8 @@ img {
         display: none;
     }
 
-    .references__container {
+    .references__container,
+    .contributions.container {
         grid-template-columns: repeat(2, 1fr);
     }
 
